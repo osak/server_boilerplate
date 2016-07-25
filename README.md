@@ -4,7 +4,9 @@
 
 # How to run
 
+    $ berks vendor vendor
     $ knife zero bootstrap (host) --sudo
-    (Edit nodes/(host).json and add "role[web]" to run_list)
     $ knife role from file roles/web.json
+    $ knife node list
+    $ knife node run_list (node) 'role[web]'
     $ knife zero converge (host or nodename)

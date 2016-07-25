@@ -18,8 +18,9 @@ cookbook 'java_se', '~> 8.0'
 cookbook 'nginx', '~> 2.7.6'
 
 # Database
-cookbook 'postgresql', git: 'https://github.com/phlipper/chef-postgresql'
-cookbook 'mongodb'
+cookbook 'mysql'
+cookbook 'yum-mysql-community'
+cookbook 'mongodb3', '~> 5.2.0'
 
 # CI
 cookbook 'jenkins'

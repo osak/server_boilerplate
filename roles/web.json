@@ -1,7 +1,5 @@
 {
   "name": "web",
-  "description": "",
-  "json_class": "Chef::Role",
   "default_attributes": {
     "rbenv": {
       "rubies": [
@@ -24,10 +22,6 @@
       "install_python3": true
     }
   },
-  "override_attributes": {
-
-  },
-  "chef_type": "role",
   "run_list": [
     "recipe[apt]",
     "recipe[build-essential]",
@@ -38,12 +32,9 @@
     "recipe[poise-python]",
     "recipe[java_se]",
     "recipe[nginx]",
-    "recipe[postgresql]",
-    "recipe[postgresql::server]",
-    //"recipe[mongodb]",
+    "recipe[yum-mysql-community::mysql56]",
+    "recipe[server_boilerplate::mysql]",
+    "recipe[mongodb3]",
     "recipe[jenkins::master]"
-  ],
-  "env_run_lists": {
-
-  }
+  ]
 }
