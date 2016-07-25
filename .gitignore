@@ -14,3 +14,7 @@ bin/*
 
 .kitchen/
 .kitchen.local.yml
+
+nodes
+vendor
+.chef/local-mode-cache

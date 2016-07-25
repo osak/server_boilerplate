@@ -12,9 +12,10 @@ cookbook 'git'
 cookbook 'ruby_build'
 cookbook 'ruby_rbenv'
 cookbook 'poise-python'
+cookbook 'java_se', '~> 8.0'
 
 # Server
-cookbook 'nginx'
+cookbook 'nginx', '~> 2.7.6'
 
 # Database
 cookbook 'postgresql', git: 'https://github.com/phlipper/chef-postgresql'
