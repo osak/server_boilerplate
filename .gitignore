@@ -18,3 +18,4 @@ bin/*
 nodes
 vendor
 .chef/local-mode-cache
+site-cookbooks

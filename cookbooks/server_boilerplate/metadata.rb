@@ -6,5 +6,15 @@ description 'Installs/Configures server_boilerplate'
 long_description 'Installs/Configures server_boilerplate'
 version '0.1.0'
 
+depends 'build-essential'
+depends 'ruby_build'
+depends 'ruby_rbenv'
+depends 'poise-python'
+depends 'java_se', '~> 8.0'
+depends 'nginx', '~> 2.7.6'
+
 depends 'mysql', '~> 8.0'
 depends 'yum-mysql-community'
+depends 'mongodb3', '~> 5.2.0'
+
+depends 'jenkins'
