@@ -1,7 +1,5 @@
 source 'https://supermarket.chef.io'
 
-metadata
-
 # Basic configurations
 cookbook 'apt'
 cookbook 'build-essential'
