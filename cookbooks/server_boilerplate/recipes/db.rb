@@ -1,11 +1,11 @@
-include_recipe 'yum-mysql-community::mysql56'
+#include_recipe 'yum-mysql-community::mysql56'
 
 package 'mysql-server' do
   package_name 'mysql-server'
   action :install
 end
 
-service 'mysqld' do
+service 'mysql' do
   action :start
 end
 
